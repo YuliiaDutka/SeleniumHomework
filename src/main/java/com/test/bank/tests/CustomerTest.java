@@ -114,5 +114,7 @@ public class CustomerTest {
         customerPage.validateDepositFunctionality("500", "Deposit Successful");
         customerPage.validateWithdrawalFunctionality("300", "Transaction successful");
         customerPage.validateTransactionsFunctionality();
+        Thread.sleep(1000);
+        driver.quit();
     }
 }
