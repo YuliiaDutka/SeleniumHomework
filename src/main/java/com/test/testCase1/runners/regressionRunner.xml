@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite">
+    <test name = "CodeFish Vaccines Tests">
+        <parameter name="username" value="y432"> </parameter>
+        <parameter name="password" value="1234"> </parameter>
+        <parameter name="home" value="home"> </parameter>
+        <parameter name="category" value="vaccine"> </parameter>
+        <parameter name="illness" value="covid"> </parameter>
+        <parameter name="expectedItem1" value="Pfizer Vaccine"> </parameter>
+        <parameter name="expectedItem2" value="Sputnik Vaccine"> </parameter>
+
+        <classes>
+            <class name ="com.test.testCase1.tests.VaccinesMainTest"> </class>
+            <class name ="com.test.testCase1.tests.VaccinesCartTest"> </class>
+
+        </classes>
+    </test>
+</suite>
